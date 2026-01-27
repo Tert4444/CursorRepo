@@ -1,0 +1,20 @@
+node_modules/
+npm-debug.log
+.env
+.env.local
+.DS_Store
+*.log
+.vscode/
+.idea/
+
+# Windows system files
+NTUSER.DAT*
+ntuser.dat*
+ntuser.ini
+*.TM.blf
+*.TMContainer*
+desktop.ini
+Thumbs.db
+
+# Cursor/IDE files
+.cursor/

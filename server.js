@@ -1,3 +1,4 @@
+require('dotenv').config();
 const express = require('express');
 const multer = require('multer');
 const { BlobServiceClient } = require('@azure/storage-blob');
@@ -6,7 +7,7 @@ const path = require('path');
 const app = express();
 const upload = multer();
 
-// Environment variables
+// Environment variables (from .env locally, or from Azure App Settings when deployed)
 const connectionString = process.env.AZURE_STORAGE_CONNECTION_STRING;
 const containerName = process.env.AZURE_STORAGE_CONTAINER || 'uploads';
 
